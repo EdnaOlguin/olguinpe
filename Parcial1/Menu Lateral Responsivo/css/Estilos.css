@@ -1,0 +1,203 @@
+body{
+    margin: 0;
+    padding: 0 ;
+    font-family:'Lucida Sans';
+    background-color: #DFE2DF;
+} 
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+#barra{
+    margin: auto;
+    margin-left: 250px;
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    background-color:#001E52;
+
+}
+
+.MenuContainer{
+    position:fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #000E29;
+}
+
+.MenuContainer #Menu{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background-color:#001E52;
+    user-select: none;
+}
+
+.MenuContainer ul li a{
+    display: block;
+    height: 90%;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    font-size:20px;
+    padding-left:40px;
+    box-sizing: border-box;
+    border-top: #001E52 1px solid ;
+    transition: 0.5s;
+}
+
+ul li a:hover {
+    padding-left: 50px;
+    background-color: #001E52;
+}
+
+.MainContainer{
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-left: 350px;
+    position: relative;
+    float: left;
+    width: 75%;
+    max-width: 850px;
+    height: 250px;
+    background: #d4d2c6;
+    padding: 20px;
+    border-radius: 20px;
+}
+ 
+
+/*tablets*/
+@media screen and (min-width:600px) and (max-width:1200px){
+
+    .MenuContainer{
+        position:relative;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: #000E29;
+    }
+
+    #barra{
+        display: none;  
+    }
+
+    .MenuContainer #Menu{
+        display: none;
+
+    }
+
+    .MenuContainer ul li{
+        display:inline-block;
+        height: 150px;
+        width: calc(100% / 6);
+        text-align: center;
+    }
+
+    .MenuContainer ul li a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        color: white;
+        line-height: 65px;
+        font-size:20px;
+        padding-top: 40px;
+        padding-left: 0px;
+        border-top: 0px;
+    }
+
+    ul li:hover a{
+        background-color: #001E52;
+    }
+
+    .MainContainer{
+        margin: auto 0;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        position: relative;
+        width: 75%;
+        max-width: 850px;
+        height: 250px;
+        background: #d4d2c6;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+
+}
+
+
+/*Smart Phones*/
+@media screen  and (max-width:599px){
+
+    .MenuContainer{
+        position:relative;
+        left: 0;
+        width: 100%;
+        height: 400px;
+        background: #000E29;
+    }
+
+    #barra{
+        display: none;  
+    }
+
+    .MenuContainer #Menu{
+        font-size: 22px;
+        color: white;
+        text-align: center;
+        line-height: 67px;
+        background-color:#001E52;
+        user-select: none;
+    }
+
+    .MenuContainer ul li{
+        display:block;
+        height: calc( 400px / 6);
+        width: 100%;
+        text-align: center;
+    }
+
+    .MenuContainer ul li a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        line-height: 67px;
+        color: white;
+        font-size:20px;
+        padding-left: 0px;
+        box-sizing: border-box;
+        border-top: #001E52 1px solid ;
+        border-top: 0px ;
+        transition: 0.5s;
+    }
+
+    ul li:hover a{
+        padding-left: 10px;
+        background-color: #001E52;
+    }
+
+    .MainContainer{
+        margin: auto 0;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        position: relative;
+        width: 75%;
+        max-width: 850px;
+        height: 250px;
+        max-height: 850px;
+        background: #d4d2c6;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    
+}
