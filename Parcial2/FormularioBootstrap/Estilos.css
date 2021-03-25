@@ -1,0 +1,14 @@
+body{
+    background-image: url(https://cdn.shopify.com/s/files/1/0260/3896/0175/files/mascotas.jpg?v=1603125122) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.formulario{
+    background: rgba(0,0,0,.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
