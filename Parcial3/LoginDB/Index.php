@@ -1,0 +1,106 @@
+  
+<?php
+session_start();
+if (isset($_SESSION['usuario'])) { 
+    header("location: Home.php");
+}
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/Estilos.css">
+
+
+    <style>
+        .bg{
+            background-image:url(http://factorypyme.thestandardit.com/wp-content/uploads/sites/5/2016/05/Agenda-las-5.jpg);
+            background-position: center ;
+            background-size:cover;        
+        }
+    </style>
+   
+</head>
+<body>
+    
+    <div class="container w-75 mt-5 rounded shadow">
+        <div class="row align-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-sm">
+
+            </div>
+
+            <div class="col bg-white pl-5 pr-5 rounded-sm">
+
+                <h2 class="font-weight-bold text-center py-5">Bienvenido</h2>
+
+                <!--LOGIN--->
+
+                <form id="Formulario" action="./Login.php" method="POST" >  
+                
+                    <div class="mb-4">
+                        <label for="usuario" class="form-label">Usuario <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="usuario" id="usuario">
+                    </div>
+                    <div class="mb-4">
+                        <label for="contraseña" class="form-label">Password <span class="text-danger">*</span></label>
+                        <input type='password' class="form-control" name="contraseña" id="contraseña">
+                    </div>
+                    <div class="mb-4 form-check">
+                        <input type="checkbox" name="connected" class="form-chek-input" id="Co">
+                        <label for="connected" class="form-check-label">Manterme contectado</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" name="submit" id=btnEnviar class="btn btn-primary btn-block">Iniciar Sesión</button>
+                    </div>
+
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a href="#"> Registrate</a></span><br>
+                        <span><a href="#">Recuperar password</a></span>
+                    </div>
+                </form>
+
+                <!-- LOGIN CON REDES SOCIALES-->
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12">Iniciar Sesion</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-outline-primary w-100 my-1">
+                                <div class="row aling-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="https://www.pngjoy.com/pngl/51/12662088_logo-facebook-png-transparente-facebook-transparent-background-facebook.png" width="32" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-10 text-center">Facebook</div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row aling-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="https://img.icons8.com/color/452/google-logo.png" width="32" alt="">
+                                    </div>
+
+                                    <div class="col-12 col-md-10 text-center">Google</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+</html>
