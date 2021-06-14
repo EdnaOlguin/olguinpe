@@ -1,4 +1,3 @@
-  
 <?php
 session_start();
 if (isset($_SESSION['usuario'])) { 
@@ -7,28 +6,26 @@ if (isset($_SESSION['usuario'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/Estilos.css">
+        <link rel="stylesheet" href="./assets/sweetalert2/sweetalert2.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="CSS/Estilos.css">
-
-
-    <style>
+        <style>
         .bg{
             background-image:url(http://factorypyme.thestandardit.com/wp-content/uploads/sites/5/2016/05/Agenda-las-5.jpg);
             background-position: center ;
             background-size:cover;        
         }
-    </style>
-   
-</head>
-<body>
-    
+        </style>
+
+    </head>
+    <body>
     <div class="container w-75 mt-5 rounded shadow">
         <div class="row align-items-stretch">
             <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-sm">
@@ -41,15 +38,15 @@ if (isset($_SESSION['usuario'])) {
 
                 <!--LOGIN--->
 
-                <form id="Formulario" action="./Login.php" method="POST" >  
+                <form id="Formulario" action="#" method="POST" >  
                 
                     <div class="mb-4">
                         <label for="usuario" class="form-label">Usuario <span class="text-danger">*</span></label>
                         <input type="text" class="form-control" name="usuario" id="usuario">
                     </div>
                     <div class="mb-4">
-                        <label for="contraseña" class="form-label">Password <span class="text-danger">*</span></label>
-                        <input type='password' class="form-control" name="contraseña" id="contraseña">
+                        <label for="contrasena" class="form-label">Password <span class="text-danger">*</span></label>
+                        <input type='password' class="form-control" name="contrasena" id="contrasena">
                     </div>
                     <div class="mb-4 form-check">
                         <input type="checkbox" name="connected" class="form-chek-input" id="Co">
@@ -100,7 +97,11 @@ if (isset($_SESSION['usuario'])) {
         </div>
     </div>
 
-</body>
-
-
+    <script src="./assets/jquery/jquery-3.3.1.min.js"></script>    
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>    
+    <script src="./assets/popper/popper.min.js"></script>       
+        
+    <script src="./assets/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="./js/Codigo.js"></script>   
+    </body>
 </html>

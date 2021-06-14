@@ -24,11 +24,12 @@
 
     foreach($data as $registro){
         echo $registro['IdCliente'].' - '.
-             $registro['Colonia'].' - '.
-             $registro['Calle'].' - '.
-             $registro['NumDomicilio'].' - '.
-             $registro['Telefono'].' - '.
-             $registro['NumMascotas'].'<br>';
+            $registro['NombreCliente'].' - '.
+            $registro['Colonia'].' - '.
+            $registro['Calle'].' - '.
+            $registro['NumDomicilio'].' - '.
+            $registro['Telefono'].' - '.
+            $registro['NumMascotas'].'<br>';
     }
 
 ?>

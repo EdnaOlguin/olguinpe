@@ -9,6 +9,7 @@ $('document').ready(function (){
                  paging: true,
                  data: ret,
                  fields: [{ name: "IdCliente",type: "number",title: "ID", width: 10,validate: "required",align:"center"},
+                        { name: "NombreCliente",type: "text",title: "Nombre",width: 80,align:"center"},
                          { name: "Colonia",type: "text",title: "Colonia",width: 80,align:"center"},
                          { name: "Calle",type: "text",title: "Calle", width: 55,align:"center"},
                          { name: "NumDomicilio",type: "text",title: "Num Domicilio", width: 40,align:"center"},
